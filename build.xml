@@ -7,7 +7,20 @@
 <echo> Hello World - Welcome to Simplilearn</echo>
 
 </target>
+<target name="compile">  
 
+<javac includeantruntime="false" srcdir="." destdir = "test"></javac>  
+
+ </target>
+
+    <target name="run">  
+
+        <java classname = "HelloWorld">  
+
+            <classpath path="test"></classpath>  
+
+        </java>
+   </target>
 </project>
 
 
